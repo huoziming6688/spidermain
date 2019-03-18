@@ -1,0 +1,22 @@
+2019-03-18 20:19:52,312 ERROR    Traceback (most recent call last):
+  File "d:\spiter\mainspider.py", line 87, in get_subdistrictinfo
+    cursor.execute(sql)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Miniconda\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Miniconda\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry 'https://sh.lianjia.com/xiaoqu/5011000014485/' for key 'url'")
+
+2019-03-18 20:20:27,974 INFO     pudong区第4到第10（包含）已经保存完毕
