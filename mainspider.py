@@ -11,13 +11,13 @@ from download_pic import *
 import traceback
 
 RANDOM_DELAY='False'
-
+STATICFILEDIR='D:\spider'
 HOST='localhost'
 USER='root'
 PWD=''
 DB='spiderdb'
 mylog=MyLog()
-CODE={'huangpu':'01','xuhui':'04','changning':'05','pudong':'15'}
+CODE={'minhang':'12','baoshan':'13','xuhui':'04','putuo':'07','yangpu':'10','changning':'05','songjiang':'17','jiading':'14','huangpu':'01','jingan':'06','hongkou':'09','qingpu':'18','fengxian':'20','jinshan':'16','chongming':'51','pudong':'15','zhabei':'08'}
 def random_delay():
     if RANDOM_DELAY:
         time.sleep(random.randint(0, 2))
@@ -67,7 +67,7 @@ def get_subdistrictinfo(district,page1,page2):
             
             for info in infolist:
                 #生成小区图片文件夹
-                imagedir=f'{os.getcwd()}/image/L{sid}'
+                imagedir=f'{STATICFILEDIR}/image/L{sid}'
                 mkdir(imagedir)
                 #下载小区首页图
                 imagepath=imagedir+'/shouyeimage.jpg'
@@ -138,7 +138,9 @@ def get_subdistrictdetails(district):
             for imageurl in (soup.find('ol',attrs={'id':'overviewThumbnail'}).find_all('li')):                
                 imagelist.append(imageurl['data-src'])
             #获取小区均价
-            details['unitprice']=soup.find('span',attrs={'class':'xiaoquUnitPrice'}).text
+            if soup.find('span',attrs={'class':'xiaoquUnitPrice'}):
+                details['unitprice']=soup.find('span',attrs={'class':'xiaoquUnitPrice'}).text
+            else:details['unitprice']=0
             #建筑时间，建筑类型，管理费，管理公司，开发商，总楼栋，总房屋获取
             list1=[]
             for i in (soup.find_all('span',attrs={'class':'xiaoquInfoContent'})):
@@ -179,7 +181,7 @@ def get_subdistrictdetails(district):
             mylog.debug(f"{details['sid']}已经保存完毕")
         mylog.info(f'{results[0][0]}到{results[-1][0]}(包含)保存完毕')
     else:
-        mylog.debug(f'district表中的所有小区详情已存在')
+        mylog.debug(f'{district}区subdistrict表中的所有小区详情已存在')
     db.close()
 
 def get_xiaoquhousespage(zufangurl:str):
@@ -242,7 +244,7 @@ def get_xiaoquhousesinfo(district):
                         houseinfo['hurl']="http://sh.lianjia.com"+re.search(r'href=\"(.*?)\"',str(i)).group(1)
                         houseinfo['htitle']=re.search(r'<img alt="(.*?)\"',str(i)).group(1)
                         houseinfo['himageurl']=re.search(r' data-src="(.*?)\"',str(i)).group(1)
-                        houseimagedir=f"{os.getcwd()}/image/{subdistrictid}/{houseinfo['hid']}"
+                        houseimagedir=f"{STATICFILEDIR}/image/{subdistrictid}/{houseinfo['hid']}"
                         mkdir(houseimagedir)
                         download_images(houseinfo['himageurl'],f'{houseimagedir}/househouyeimage.jpg')
                         houseinfo['himagedir']=houseimagedir
@@ -383,7 +385,7 @@ def download_bigimages(flag1):
             sid=row[0]
             bigimageurl=row[1]
             bigimageorder=row[2]
-            save_path=f"{os.getcwd()}/image/{sid}/{bigimageorder}.jpg"
+            save_path=f"{STATICFILEDIR}/image/{sid}/{bigimageorder}.jpg"
             isdownload=download_images(bigimageurl,save_path)
             sqlup_isdownload=f"update xqimageurl set isdownload = {isdownload} where sid ='{sid}' and imageorder='{bigimageorder}'"
             cursor.execute(sqlup_isdownload)
@@ -398,7 +400,7 @@ def download_bigimages(flag1):
             hid=row[0]
             hbigimageurl=row[1]
             hbigimageorder=row[2]
-            save_path=f"{os.getcwd()}/image/{hid[0:-4]}/{hid}/{hbigimageorder}.jpg"
+            save_path=f"{STATICFILEDIR}/image/{hid[0:-4]}/{hid}/{hbigimageorder}.jpg"
             isdownload=download_images(hbigimageurl,save_path)
             sqlup_isdownload=f"update himageurl set isdownload = {isdownload} where hid ='{hid}' and himageorder='{hbigimageorder}'"
             cursor.execute(sqlup_isdownload)
@@ -412,8 +414,11 @@ def download_bigimages(flag1):
 
 
 if __name__ == "__main__":
+    for i in CODE:
+        #get_subdistrictinfo(i,1,10)
+        get_subdistrictdetails(i)
     #get_subdistrictinfo('pudong',4,10)
-    get_subdistrictdetails()
+    #get_subdistrictdetails()
    # download_bigimages('xiaoqu')
     # get_subdistrictinfo('pudong',1,5)
     # get_xiaoquhousesinfo()
