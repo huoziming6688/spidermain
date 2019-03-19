@@ -3,3 +3,23 @@
 2019-03-05 23:52:17,221 INFO     pudong区第1到第1（包含）已经保存完毕
 2019-03-05 23:54:19,772 INFO     pudong区第2到第2（包含）已经保存完毕
 2019-03-05 23:54:59,987 INFO     pudong区第3到第3（包含）已经保存完毕
+2019-03-19 10:15:39,023 ERROR    IntegrityError(1062, "Duplicate entry 'L3101060001-https://image1.ljcdn.com/hdic-resblock/82474739-a165' for key 'PRIMARY'")
+2019-03-19 10:16:12,730 ERROR    IntegrityError(1062, "Duplicate entry 'L3101140007-https://image1.ljcdn.com/hdic-resblock/605627f3-b7fb' for key 'PRIMARY'")
+2019-03-19 10:16:45,072 ERROR    IntegrityError(1062, "Duplicate entry 'L3101060008-https://image1.ljcdn.com/hdic-resblock/36ff0247-49a9' for key 'PRIMARY'")
+2019-03-19 10:16:58,829 ERROR    IntegrityError(1062, "Duplicate entry 'L3101010012-https://image1.ljcdn.com/hdic-resblock/2956188b-0702' for key 'PRIMARY'")
+2019-03-19 10:17:18,338 ERROR    IntegrityError(1062, "Duplicate entry 'L3101170014-https://image1.ljcdn.com/hdic-resblock/db6e9a66-80ad' for key 'PRIMARY'")
+2019-03-19 10:31:00,139 ERROR    IntegrityError(1062, "Duplicate entry 'L3101150033-https://image1.ljcdn.com/hdic-resblock/2e826d6c-d135' for key 'PRIMARY'")
+2019-03-19 10:38:51,109 ERROR    IntegrityError(1062, "Duplicate entry 'L3101150041-https://image1.ljcdn.com/hdic-resblock/b101b6fa-9cbc' for key 'PRIMARY'")
+2019-03-19 10:40:02,862 ERROR    IntegrityError(1062, "Duplicate entry 'L3101150052-https://image1.ljcdn.com/hdic-resblock/0a60aaa2-b4b7' for key 'PRIMARY'")
+2019-03-19 10:41:19,224 ERROR    IntegrityError(1062, "Duplicate entry 'L3101160082-https://image1.ljcdn.com/hdic-resblock/db1b7852-d1d7' for key 'PRIMARY'")
+2019-03-19 10:41:19,256 ERROR    IntegrityError(1062, "Duplicate entry 'L3101160082-https://image1.ljcdn.com/hdic-resblock/db1b7852-d1d7' for key 'PRIMARY'")
+2019-03-19 10:41:19,291 ERROR    IntegrityError(1062, "Duplicate entry 'L3101160082-https://image1.ljcdn.com/hdic-resblock/db1b7852-d1d7' for key 'PRIMARY'")
+2019-03-19 10:41:35,791 ERROR    IntegrityError(1062, "Duplicate entry 'L3101160084-https://image1.ljcdn.com/hdic-resblock/88a1ee72-b5e8' for key 'PRIMARY'")
+2019-03-19 10:43:35,106 ERROR    IntegrityError(1062, "Duplicate entry 'L3101050068-https://image1.ljcdn.com/hdic-resblock/a9972830-ce19' for key 'PRIMARY'")
+2019-03-19 10:44:46,316 ERROR    IntegrityError(1062, "Duplicate entry 'L3101170089-https://image1.ljcdn.com/hdic-resblock/d23794e8-503a' for key 'PRIMARY'")
+2019-03-19 10:44:46,515 ERROR    IntegrityError(1062, "Duplicate entry 'L3101050078-https://image1.ljcdn.com/hdic-resblock/3f687ef2-b313' for key 'PRIMARY'")
+2019-03-19 10:45:29,715 ERROR    IntegrityError(1062, "Duplicate entry 'L3101150094-https://image1.ljcdn.com/hdic-resblock/434ae39e-73fc' for key 'PRIMARY'")
+2019-03-19 10:45:50,037 ERROR    IntegrityError(1062, "Duplicate entry 'L3101150097-https://image1.ljcdn.com/hdic-resblock/e517de5e-c6fe' for key 'PRIMARY'")
+2019-03-19 10:46:23,889 ERROR    IntegrityError(1062, "Duplicate entry 'L3101080107-https://image1.ljcdn.com/hdic-resblock/b32edf9d-c012' for key 'PRIMARY'")
+2019-03-19 10:47:05,872 ERROR    IntegrityError(1062, "Duplicate entry 'L3101150107-https://image1.ljcdn.com/hdic-resblock/6a351f89-5a48' for key 'PRIMARY'")
+2019-03-19 10:47:22,707 ERROR    IntegrityError(1062, "Duplicate entry 'L3101140117-https://image1.ljcdn.com/hdic-resblock/1159ba96-f769' for key 'PRIMARY'")

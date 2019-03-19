@@ -17,6 +17,7 @@ USER='root'
 PWD=''
 DB='spiderdb'
 mylog=MyLog()
+#17个区
 CODE={'minhang':'12','baoshan':'13','xuhui':'04','putuo':'07','yangpu':'10','changning':'05','songjiang':'17','jiading':'14','huangpu':'01','jingan':'06','hongkou':'09','qingpu':'18','fengxian':'20','jinshan':'16','chongming':'51','pudong':'15','zhabei':'08'}
 def random_delay():
     if RANDOM_DELAY:
@@ -132,32 +133,49 @@ def get_subdistrictdetails(district):
                 sys.exit(0)
             soup=BeautifulSoup(r)
             #获取小区地址
-            details['address']=soup.find('div',attrs={'class':'detailDesc'}).text
+            if(soup.find('div',attrs={'class':'detailDesc'})):
+                details['address']=soup.find('div',attrs={'class':'detailDesc'}).text
+            else:details['address']=''
             #获取小区大图的链接
             imagelist=[]
-            for imageurl in (soup.find('ol',attrs={'id':'overviewThumbnail'}).find_all('li')):                
-                imagelist.append(imageurl['data-src'])
+            try:
+                for imageurl in (soup.find('ol',attrs={'id':'overviewThumbnail'}).find_all('li')):           
+                    imagelist.append(imageurl['data-src'])   
+            except:pass      
             #获取小区均价
-            if soup.find('span',attrs={'class':'xiaoquUnitPrice'}):
+            if(soup.find('span',attrs={'class':'xiaoquUnitPrice'})):
                 details['unitprice']=soup.find('span',attrs={'class':'xiaoquUnitPrice'}).text
             else:details['unitprice']=0
             #建筑时间，建筑类型，管理费，管理公司，开发商，总楼栋，总房屋获取
             list1=[]
-            for i in (soup.find_all('span',attrs={'class':'xiaoquInfoContent'})):
-                soup2=BeautifulSoup(str(i))
-                list1.append(soup2.span.text)
-            details['bulit_time']=list1[0]
-            details['bulit_type']=list1[1]
-            details['manage_fee']=list1[2]
-            details['manage_company']=list1[3]
-            details['delevoper']=list1[4]
-            details['total_buildings']=list1[5]
-            details['total_houses']=list1[6]
+            try:
+                for i in (soup.find_all('span',attrs={'class':'xiaoquInfoContent'})):
+                    soup2=BeautifulSoup(str(i))
+                    list1.append(soup2.span.text)
+                details['bulit_time']=list1[0]
+                details['bulit_type']=list1[1]
+                details['manage_fee']=list1[2]
+                details['manage_company']=list1[3]
+                details['delevoper']=list1[4]
+                details['total_buildings']=list1[5]
+                details['total_houses']=list1[6]
+            except:
+                details['bulit_time']=''
+                details['bulit_type']=''
+                details['manage_fee']=''
+                details['manage_company']=''
+                details['delevoper']=''
+                details['total_buildings']=''
+                details['total_houses']=''
             #获取小区经纬度
-            location=soup.find(text=re.compile("resblockPosition"))
-            pattern=re.compile(r'resblockPosition:\'(.+?)\'')
-            details['jingdu']=pattern.findall(location)[0].split(',')[0]
-            details['weidu']=pattern.findall(location)[0].split(',')[1]
+            try:
+                location=soup.find(text=re.compile("resblockPosition"))
+                pattern=re.compile(r'resblockPosition:\'(.+?)\'')
+                details['jingdu']=pattern.findall(location)[0].split(',')[0]
+                details['weidu']=pattern.findall(location)[0].split(',')[1]
+            except:
+                details['jingdu']=''
+                details['weidu']=''
             sql1=f"insert into subdistrict_detail(sid,avg_price,built_time,built_type,manage_fee,manage_company,developer,total_buildings,total_houses,subaddress) values ('{details['sid']}','{float(details['unitprice'])}','{details['bulit_time']}','{details['bulit_type']}','{details['manage_fee']}','{details['manage_company']}','{details['delevoper']}','{details['total_buildings']}','{details['total_houses']}','{details['address']}')"
             sql2=f"insert into `subdistrict location`(sid,jingdu,weidu) values ('{details['sid']}','{details['jingdu']}','{details['weidu']}')"
             try:
@@ -275,7 +293,7 @@ def get_xiaoquhousesinfo(district):
                 mylog.error(str(traceback.format_exc()))
         mylog.info(f'{results[0][0]}到{results[-1][0]}保存完毕')
     else:
-        mylog.debug('subdistrict表中的所有小区已经爬取完毕')
+        mylog.debug(f'{district}表中subdistrict表中的所有小区已经爬取完毕')
     db.close()
             
                 
@@ -367,7 +385,7 @@ def get_xiaoquhousesdetails(district):
                 mylog.error(f"{housedetails['hid']}已失效")
         mylog.info(f'{hresults[0][0]}到{hresults[-1][0]}(包含)保存完毕')
     else:
-        mylog.debug(f'house表中的所有房子详情已存在')
+        mylog.debug(f'{district}区house表中的所有房子详情已存在')
     db.close()
 
 

@@ -5567,3 +5567,4 @@ pymysql.err.DataError: (1406, "Data too long for column 'subaddress' at row 1")
 2019-03-19 00:09:17,501 INFO     L3101040032到L3101040300(包含)保存完毕
 2019-03-19 00:17:57,663 ERROR    IntegrityError(1062, "Duplicate entry 'L3101070216-https://image1.ljcdn.com/hdic-resblock/42d1904c-6dcf' for key 'PRIMARY'")
 2019-03-19 00:21:15,346 INFO     L3101070001到L3101070300(包含)保存完毕
+2019-03-19 00:32:42,555 INFO     L3101100001到L3101100300(包含)保存完毕
