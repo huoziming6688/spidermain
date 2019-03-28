@@ -10,7 +10,7 @@ import time,random
 from download_pic import *
 import traceback
 
-RANDOM_DELAY='False'
+RANDOM_DELAY=False
 STATICFILEDIR='D:\spider'
 HOST='localhost'
 USER='root'
@@ -223,7 +223,7 @@ def get_xiaoquhousesinfo(district):
     did='3101'+CODE[district]
     db=pymysql.connect(HOST,USER,PWD,DB)
     cursor = db.cursor()
-    sql="select x.sid,x.yuanid from subdistrict as x where x.sid not in (select subdistrictid from house) and (x.issearch = 0 or x.issearch is NULL) x.districtid={did} order by x.sid"
+    sql=f"select x.sid,x.yuanid from subdistrict as x where x.sid not in (select subdistrictid from house) and (x.issearch = 0 or x.issearch is NULL) and x.districtid={did} order by x.sid"
     try:
         # 执行SQL语句
         cursor.execute(sql)
@@ -262,11 +262,12 @@ def get_xiaoquhousesinfo(district):
                         houseinfo['hurl']="http://sh.lianjia.com"+re.search(r'href=\"(.*?)\"',str(i)).group(1)
                         houseinfo['htitle']=re.search(r'<img alt="(.*?)\"',str(i)).group(1)
                         houseinfo['himageurl']=re.search(r' data-src="(.*?)\"',str(i)).group(1)
+                            
                         houseimagedir=f"{STATICFILEDIR}/image/{subdistrictid}/{houseinfo['hid']}"
                         mkdir(houseimagedir)
                         download_images(houseinfo['himageurl'],f'{houseimagedir}/househouyeimage.jpg')
                         houseinfo['himagedir']=houseimagedir
-                        sql1=f"insert into house(hid,subdistrictid,hyuanid,hurl,htitle,himageurl,himagedir) values('{houseinfo['hid']}','{houseinfo['subdistrictid']}','{houseinfo['hyuanid']}','{houseinfo['hurl']}','{houseinfo['htitle']}','{houseinfo['himageurl']}','{houseinfo['himagedir']}')"
+                        sql1=f"insert into house(hid,subdistrictid,hyuanid,hurl,htitle,hsmallimageurl,himagedir) values('{houseinfo['hid']}','{houseinfo['subdistrictid']}','{houseinfo['hyuanid']}','{houseinfo['hurl']}','{houseinfo['htitle']}','{houseinfo['himageurl']}','{houseinfo['himagedir']}')"
                         try:
                             cursor.execute(sql1)
                             
@@ -303,7 +304,7 @@ def get_xiaoquhousesdetails(district):
     hresults=[]
     db=pymysql.connect(HOST,USER,PWD,DB)
     cursor = db.cursor()
-    sql=f"select x.hid,hurl from house as x where x.hid not in (select y.hid from house_detail as y) and x.hid like {hidhead} order by x.hid"
+    sql=f"select x.hid,hurl from house as x where x.hid not in (select y.hid from house_detail as y) and x.hid like '{hidhead}' order by x.hid"
     try:
         # 执行SQL语句
         cursor.execute(sql)
@@ -335,7 +336,9 @@ def get_xiaoquhousesdetails(district):
                 housedetails['hdirection']=re.search(r'<span><i class="orient"></i>(.*?)<',r).group(1)
                 housedetails['htype']=re.search(r'<span><i class="typ"></i>(.*?)<',r).group(1)
                 housedetails['harea']=re.search(r'<span><i class="area"></i>(\d+)',r).group(1)
-                housedetails['hcontact_info']=re.search(r'<div class="phone">(.*?)<',r).group(1)
+                if re.search(r'<div class="phone">(.*?)<',r)!=None:
+                    housedetails['hcontact_info']=re.search(r'<div class="phone">(.*?)<',r).group(1)
+                else:housedetails['hcontact_info']=''
                 housedetails['hfloor']=re.search(r'<li class="fl oneline">楼层：(.*?)<',r).group(1)
                 if soup.find('p',attrs={'data-el':'houseComment'})!= None:
                     housedetails['description']=soup.find('p',attrs={'data-el':'houseComment'})['data-desc'].replace('\n','')
@@ -389,13 +392,16 @@ def get_xiaoquhousesdetails(district):
     db.close()
 
 
-def download_bigimages(flag1):
+def download_bigimages(flag1,district):
     db = pymysql.connect(HOST,USER,PWD,DB)
     cursor=db.cursor()
     if flag1=='xiaoqu':
-        sqlget_bigimages=f"select sid,bigimageurl,imageorder from xqimageurl where (isdownload = 0 or isdownload is NULL) order by sid"
+        sidhead='L3101'+CODE[district]+'%'
+        sqlget_bigimages=f"select sid,bigimageurl,imageorder from xqimageurl where (isdownload = 0 or isdownload is NULL)  and sid like '{sidhead}' order by sid"
+        resultbigimages=[]
         try:
             cursor.execute(sqlget_bigimages)
+            
             resultbigimages=cursor.fetchall()
         except:
             print(1)
@@ -411,8 +417,10 @@ def download_bigimages(flag1):
 
         
     if flag1=='fangzi':
-        sqlget_bigimages=f"select hid,hbigimageurl,himageorder from himageurl where (isdownload = 0 or isdownload is NULL) order by hid"
+        hidhead='L3101'+CODE[district]+'%'
+        sqlget_bigimages=f"select hid,hbigimageurl,himageorder from himageurl where (isdownload = 0 or isdownload is NULL) and hid like '{hidhead}' and himageorder<5 order by hid"
         cursor.execute(sqlget_bigimages)
+        resultbigimages=[]
         resultbigimages=cursor.fetchall()
         for row in resultbigimages:
             hid=row[0]
@@ -432,9 +440,10 @@ def download_bigimages(flag1):
 
 
 if __name__ == "__main__":
-    for i in CODE:
-        #get_subdistrictinfo(i,1,10)
-        get_subdistrictdetails(i)
+    
+    pass
+   # get_subdistrictinfo('pudong',11,11)
+        # get_subdistrictdetails(i)
     #get_subdistrictinfo('pudong',4,10)
     #get_subdistrictdetails()
    # download_bigimages('xiaoqu')

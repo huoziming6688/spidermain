@@ -5568,3 +5568,67 @@ pymysql.err.DataError: (1406, "Data too long for column 'subaddress' at row 1")
 2019-03-19 00:17:57,663 ERROR    IntegrityError(1062, "Duplicate entry 'L3101070216-https://image1.ljcdn.com/hdic-resblock/42d1904c-6dcf' for key 'PRIMARY'")
 2019-03-19 00:21:15,346 INFO     L3101070001到L3101070300(包含)保存完毕
 2019-03-19 00:32:42,555 INFO     L3101100001到L3101100300(包含)保存完毕
+2019-03-26 10:57:21,819 ERROR    Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 88, in get_subdistrictinfo
+    cursor.execute(sql)
+  File "C:\Users\xchs\envs\spiderenv\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\xchs\envs\spiderenv\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\xchs\envs\spiderenv\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\xchs\envs\spiderenv\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "C:\Users\xchs\envs\spiderenv\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\xchs\envs\spiderenv\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "C:\Users\xchs\envs\spiderenv\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\xchs\envs\spiderenv\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry 'https://sh.lianjia.com/xiaoqu/5011000016299/' for key 'url'")
+
+2019-03-26 10:57:21,837 ERROR    Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 88, in get_subdistrictinfo
+    cursor.execute(sql)
+  File "C:\Users\xchs\envs\spiderenv\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\xchs\envs\spiderenv\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\xchs\envs\spiderenv\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\xchs\envs\spiderenv\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "C:\Users\xchs\envs\spiderenv\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\xchs\envs\spiderenv\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "C:\Users\xchs\envs\spiderenv\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\xchs\envs\spiderenv\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry 'https://sh.lianjia.com/xiaoqu/5011000015523/' for key 'url'")
+
+2019-03-26 10:57:21,852 ERROR    Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 88, in get_subdistrictinfo
+    cursor.execute(sql)
+  File "C:\Users\xchs\envs\spiderenv\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "C:\Users\xchs\envs\spiderenv\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "C:\Users\xchs\envs\spiderenv\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\xchs\envs\spiderenv\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "C:\Users\xchs\envs\spiderenv\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\xchs\envs\spiderenv\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "C:\Users\xchs\envs\spiderenv\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\xchs\envs\spiderenv\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry 'https://sh.lianjia.com/xiaoqu/5011000003151/' for key 'url'")
+
+2019-03-26 10:57:24,998 INFO     pudong区第11到第11（包含）已经保存完毕

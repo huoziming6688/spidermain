@@ -23,3 +23,2132 @@
 2019-03-19 10:46:23,889 ERROR    IntegrityError(1062, "Duplicate entry 'L3101080107-https://image1.ljcdn.com/hdic-resblock/b32edf9d-c012' for key 'PRIMARY'")
 2019-03-19 10:47:05,872 ERROR    IntegrityError(1062, "Duplicate entry 'L3101150107-https://image1.ljcdn.com/hdic-resblock/6a351f89-5a48' for key 'PRIMARY'")
 2019-03-19 10:47:22,707 ERROR    IntegrityError(1062, "Duplicate entry 'L3101140117-https://image1.ljcdn.com/hdic-resblock/1159ba96-f769' for key 'PRIMARY'")
+2019-03-19 10:47:58,294 ERROR    IntegrityError(1062, "Duplicate entry 'L3101150114-https://image1.ljcdn.com/hdic-resblock/d209e6ca-f665' for key 'PRIMARY'")
+2019-03-19 10:48:23,160 ERROR    IntegrityError(1062, "Duplicate entry 'L3101010108-https://image1.ljcdn.com/hdic-resblock/02d65bc2-a180' for key 'PRIMARY'")
+2019-03-19 10:48:30,103 ERROR    IntegrityError(1062, "Duplicate entry 'L3101150118-https://image1.ljcdn.com/hdic-resblock/f62f5ce3-008f' for key 'PRIMARY'")
+2019-03-19 10:49:40,372 ERROR    IntegrityError(1062, "Duplicate entry 'L3101080133-https://image1.ljcdn.com/hdic-resblock/16811712-03c6' for key 'PRIMARY'")
+2019-03-19 10:54:39,148 INFO     L3101510043到L3101510300(包含)保存完毕
+2019-03-19 10:55:22,458 INFO     L3101160045到L3101160296(包含)保存完毕
+2019-03-19 10:56:15,626 ERROR    IntegrityError(1062, "Duplicate entry 'L3101150184-https://image1.ljcdn.com/hdic-resblock/64547c99-bd70' for key 'PRIMARY'")
+2019-03-19 10:56:45,149 ERROR    IntegrityError(1062, "Duplicate entry 'L3101150189-https://image1.ljcdn.com/hdic-resblock/398a1f77-cfcf' for key 'PRIMARY'")
+2019-03-19 10:59:56,484 ERROR    IntegrityError(1062, "Duplicate entry 'L3101150218-https://image1.ljcdn.com/hdic-resblock/47dbc273-2e9c' for key 'PRIMARY'")
+2019-03-19 11:02:28,469 ERROR    IntegrityError(1062, "Duplicate entry 'L3101150245-https://image1.ljcdn.com/hdic-resblock/e1e07154-f914' for key 'PRIMARY'")
+2019-03-19 11:02:31,638 INFO     L3101180038到L3101180300(包含)保存完毕
+2019-03-19 11:03:54,293 INFO     L3101200031到L3101200300(包含)保存完毕
+2019-03-19 11:04:39,890 ERROR    IntegrityError(1062, "Duplicate entry 'L3101150271-https://image1.ljcdn.com/hdic-resblock/7ebbf929-7f3d' for key 'PRIMARY'")
+2019-03-19 11:04:54,325 INFO     L3101060030到L3101060300(包含)保存完毕
+2019-03-19 11:05:06,563 INFO     L3101170030到L3101170300(包含)保存完毕
+2019-03-19 11:05:12,203 INFO     L3101080030到L3101080300(包含)保存完毕
+2019-03-19 11:05:14,655 INFO     L3101140032到L3101140300(包含)保存完毕
+2019-03-19 11:05:36,409 INFO     L3101090031到L3101090300(包含)保存完毕
+2019-03-19 11:06:12,936 INFO     L3101010021到L3101010300(包含)保存完毕
+2019-03-19 11:06:23,457 INFO     L3101050029到L3101050300(包含)保存完毕
+2019-03-19 11:06:23,806 ERROR    IntegrityError(1062, "Duplicate entry 'L3101150300-https://image1.ljcdn.com/hdic-resblock/1cf1d726-fe17' for key 'PRIMARY'")
+2019-03-19 11:06:23,823 INFO     L3101150035到L3101150300(包含)保存完毕
+2019-03-19 11:12:14,287 ERROR    Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 229, in get_xiaoquhousesinfo
+    cursor.execute(sql)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Miniconda\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Miniconda\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'x.districtid={did} order by x.sid' at line 1")
+
+2019-03-19 11:12:14,288 ERROR    Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 229, in get_xiaoquhousesinfo
+    cursor.execute(sql)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Miniconda\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Miniconda\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'x.districtid={did} order by x.sid' at line 1")
+
+2019-03-19 11:12:14,289 ERROR    Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 229, in get_xiaoquhousesinfo
+    cursor.execute(sql)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Miniconda\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Miniconda\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'x.districtid={did} order by x.sid' at line 1")
+
+2019-03-19 11:12:14,290 ERROR    Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 229, in get_xiaoquhousesinfo
+    cursor.execute(sql)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Miniconda\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Miniconda\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'x.districtid={did} order by x.sid' at line 1")
+
+2019-03-19 11:12:14,291 ERROR    Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 229, in get_xiaoquhousesinfo
+    cursor.execute(sql)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Miniconda\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Miniconda\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'x.districtid={did} order by x.sid' at line 1")
+
+2019-03-19 11:12:14,292 ERROR    Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 229, in get_xiaoquhousesinfo
+    cursor.execute(sql)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Miniconda\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Miniconda\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'x.districtid={did} order by x.sid' at line 1")
+
+2019-03-19 11:12:14,294 ERROR    Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 229, in get_xiaoquhousesinfo
+    cursor.execute(sql)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Miniconda\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Miniconda\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'x.districtid={did} order by x.sid' at line 1")
+
+2019-03-19 11:12:14,297 ERROR    Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 229, in get_xiaoquhousesinfo
+    cursor.execute(sql)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Miniconda\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Miniconda\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'x.districtid={did} order by x.sid' at line 1")
+
+2019-03-19 11:12:14,299 ERROR    Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 229, in get_xiaoquhousesinfo
+    cursor.execute(sql)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Miniconda\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Miniconda\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'x.districtid={did} order by x.sid' at line 1")
+
+2019-03-19 11:12:14,299 ERROR    Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 229, in get_xiaoquhousesinfo
+    cursor.execute(sql)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Miniconda\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Miniconda\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'x.districtid={did} order by x.sid' at line 1")
+
+2019-03-19 11:12:14,301 ERROR    Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 229, in get_xiaoquhousesinfo
+    cursor.execute(sql)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Miniconda\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Miniconda\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'x.districtid={did} order by x.sid' at line 1")
+
+2019-03-19 11:12:14,302 ERROR    Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 229, in get_xiaoquhousesinfo
+    cursor.execute(sql)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Miniconda\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Miniconda\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'x.districtid={did} order by x.sid' at line 1")
+
+2019-03-19 11:12:14,303 ERROR    Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 229, in get_xiaoquhousesinfo
+    cursor.execute(sql)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Miniconda\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Miniconda\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'x.districtid={did} order by x.sid' at line 1")
+
+2019-03-19 11:12:14,304 ERROR    Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 229, in get_xiaoquhousesinfo
+    cursor.execute(sql)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Miniconda\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Miniconda\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'x.districtid={did} order by x.sid' at line 1")
+
+2019-03-19 11:12:14,304 ERROR    Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 229, in get_xiaoquhousesinfo
+    cursor.execute(sql)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Miniconda\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Miniconda\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'x.districtid={did} order by x.sid' at line 1")
+
+2019-03-19 11:12:14,305 ERROR    Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 229, in get_xiaoquhousesinfo
+    cursor.execute(sql)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Miniconda\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Miniconda\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'x.districtid={did} order by x.sid' at line 1")
+
+2019-03-19 11:12:14,307 ERROR    Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 229, in get_xiaoquhousesinfo
+    cursor.execute(sql)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Miniconda\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Miniconda\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'x.districtid={did} order by x.sid' at line 1")
+
+2019-03-19 11:16:04,122 ERROR    Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 229, in get_xiaoquhousesinfo
+    cursor.execute(sql)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Miniconda\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Miniconda\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '} order by x.sid' at line 1")
+
+2019-03-19 11:16:04,126 ERROR    Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 229, in get_xiaoquhousesinfo
+    cursor.execute(sql)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Miniconda\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Miniconda\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '} order by x.sid' at line 1")
+
+2019-03-19 11:16:04,127 ERROR    Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 229, in get_xiaoquhousesinfo
+    cursor.execute(sql)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Miniconda\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Miniconda\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '} order by x.sid' at line 1")
+
+2019-03-19 11:16:04,128 ERROR    Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 229, in get_xiaoquhousesinfo
+    cursor.execute(sql)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Miniconda\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Miniconda\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '} order by x.sid' at line 1")
+
+2019-03-19 11:16:04,129 ERROR    Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 229, in get_xiaoquhousesinfo
+    cursor.execute(sql)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Miniconda\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Miniconda\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '} order by x.sid' at line 1")
+
+2019-03-19 11:16:04,130 ERROR    Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 229, in get_xiaoquhousesinfo
+    cursor.execute(sql)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Miniconda\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Miniconda\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '} order by x.sid' at line 1")
+
+2019-03-19 11:16:04,135 ERROR    Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 229, in get_xiaoquhousesinfo
+    cursor.execute(sql)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Miniconda\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Miniconda\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '} order by x.sid' at line 1")
+
+2019-03-19 11:16:04,137 ERROR    Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 229, in get_xiaoquhousesinfo
+    cursor.execute(sql)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Miniconda\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Miniconda\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '} order by x.sid' at line 1")
+
+2019-03-19 11:16:04,140 ERROR    Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 229, in get_xiaoquhousesinfo
+    cursor.execute(sql)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Miniconda\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Miniconda\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '} order by x.sid' at line 1")
+
+2019-03-19 11:16:04,141 ERROR    Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 229, in get_xiaoquhousesinfo
+    cursor.execute(sql)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Miniconda\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Miniconda\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '} order by x.sid' at line 1")
+
+2019-03-19 11:16:04,143 ERROR    Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 229, in get_xiaoquhousesinfo
+    cursor.execute(sql)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Miniconda\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Miniconda\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '} order by x.sid' at line 1")
+
+2019-03-19 11:16:04,145 ERROR    Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 229, in get_xiaoquhousesinfo
+    cursor.execute(sql)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Miniconda\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Miniconda\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '} order by x.sid' at line 1")
+
+2019-03-19 11:16:04,147 ERROR    Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 229, in get_xiaoquhousesinfo
+    cursor.execute(sql)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Miniconda\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Miniconda\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '} order by x.sid' at line 1")
+
+2019-03-19 11:16:04,148 ERROR    Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 229, in get_xiaoquhousesinfo
+    cursor.execute(sql)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Miniconda\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Miniconda\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '} order by x.sid' at line 1")
+
+2019-03-19 11:16:04,154 ERROR    Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 229, in get_xiaoquhousesinfo
+    cursor.execute(sql)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Miniconda\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Miniconda\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '} order by x.sid' at line 1")
+
+2019-03-19 11:16:04,155 ERROR    Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 229, in get_xiaoquhousesinfo
+    cursor.execute(sql)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Miniconda\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Miniconda\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '} order by x.sid' at line 1")
+
+2019-03-19 11:16:04,158 ERROR    Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 229, in get_xiaoquhousesinfo
+    cursor.execute(sql)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Miniconda\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Miniconda\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '} order by x.sid' at line 1")
+
+2019-03-19 11:17:43,126 ERROR    Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 229, in get_xiaoquhousesinfo
+    cursor.execute(sql)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Miniconda\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Miniconda\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '} order by x.sid' at line 1")
+
+2019-03-19 11:17:43,127 ERROR    Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 229, in get_xiaoquhousesinfo
+    cursor.execute(sql)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Miniconda\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Miniconda\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '} order by x.sid' at line 1")
+
+2019-03-19 11:17:43,131 ERROR    Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 229, in get_xiaoquhousesinfo
+    cursor.execute(sql)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Miniconda\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Miniconda\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '} order by x.sid' at line 1")
+
+2019-03-19 11:17:43,132 ERROR    Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 229, in get_xiaoquhousesinfo
+    cursor.execute(sql)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Miniconda\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Miniconda\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '} order by x.sid' at line 1")
+
+2019-03-19 11:17:43,133 ERROR    Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 229, in get_xiaoquhousesinfo
+    cursor.execute(sql)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Miniconda\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Miniconda\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '} order by x.sid' at line 1")
+
+2019-03-19 11:17:43,135 ERROR    Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 229, in get_xiaoquhousesinfo
+    cursor.execute(sql)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Miniconda\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Miniconda\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '} order by x.sid' at line 1")
+
+2019-03-19 11:17:43,141 ERROR    Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 229, in get_xiaoquhousesinfo
+    cursor.execute(sql)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Miniconda\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Miniconda\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '} order by x.sid' at line 1")
+
+2019-03-19 11:17:43,143 ERROR    Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 229, in get_xiaoquhousesinfo
+    cursor.execute(sql)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Miniconda\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Miniconda\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '} order by x.sid' at line 1")
+
+2019-03-19 11:17:43,143 ERROR    Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 229, in get_xiaoquhousesinfo
+    cursor.execute(sql)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Miniconda\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Miniconda\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '} order by x.sid' at line 1")
+
+2019-03-19 11:17:43,149 ERROR    Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 229, in get_xiaoquhousesinfo
+    cursor.execute(sql)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Miniconda\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Miniconda\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '} order by x.sid' at line 1")
+
+2019-03-19 11:17:43,150 ERROR    Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 229, in get_xiaoquhousesinfo
+    cursor.execute(sql)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Miniconda\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Miniconda\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '} order by x.sid' at line 1")
+
+2019-03-19 11:17:43,153 ERROR    Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 229, in get_xiaoquhousesinfo
+    cursor.execute(sql)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Miniconda\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Miniconda\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '} order by x.sid' at line 1")
+
+2019-03-19 11:17:43,157 ERROR    Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 229, in get_xiaoquhousesinfo
+    cursor.execute(sql)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Miniconda\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Miniconda\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '} order by x.sid' at line 1")
+
+2019-03-19 11:17:43,162 ERROR    Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 229, in get_xiaoquhousesinfo
+    cursor.execute(sql)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Miniconda\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Miniconda\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '} order by x.sid' at line 1")
+
+2019-03-19 11:17:43,163 ERROR    Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 229, in get_xiaoquhousesinfo
+    cursor.execute(sql)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Miniconda\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Miniconda\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '} order by x.sid' at line 1")
+
+2019-03-19 11:17:43,166 ERROR    Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 229, in get_xiaoquhousesinfo
+    cursor.execute(sql)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Miniconda\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Miniconda\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '} order by x.sid' at line 1")
+
+2019-03-19 11:17:43,173 ERROR    Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 229, in get_xiaoquhousesinfo
+    cursor.execute(sql)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 170, in execute
+    result = self._query(query)
+  File "D:\Miniconda\lib\site-packages\pymysql\cursors.py", line 328, in _query
+    conn.query(q)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 732, in _read_query_result
+    result.read()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Miniconda\lib\site-packages\pymysql\connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "D:\Miniconda\lib\site-packages\pymysql\protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Miniconda\lib\site-packages\pymysql\err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '} order by x.sid' at line 1")
+
+2019-03-19 11:18:23,529 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:18:24,687 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:18:24,796 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:19,107 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:20,210 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:21,063 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:21,289 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:21,719 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:22,097 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:22,492 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:22,570 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:23,002 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:23,037 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:23,285 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:23,384 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:23,388 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:23,450 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:23,524 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:23,533 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:23,582 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:23,591 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:23,592 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:23,645 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:23,688 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:23,696 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:23,713 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:23,759 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:23,761 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:23,793 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:23,871 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:24,079 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:24,212 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:24,233 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:24,376 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:24,431 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:24,579 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:24,683 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:24,841 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:24,930 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:24,931 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:25,039 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:25,051 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:25,145 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:25,166 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:25,172 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:25,185 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:25,192 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:25,230 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:25,258 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:25,305 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:25,327 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:25,338 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:25,345 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:25,348 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:25,361 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:25,400 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:25,443 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:25,446 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:25,465 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:25,472 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:25,509 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:25,658 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:25,726 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:25,903 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:25,949 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:26,037 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:26,086 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:26,238 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:26,687 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:26,703 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:26,836 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:27,002 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:27,148 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:27,396 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:27,558 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:27,615 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:27,698 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:27,774 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:27,828 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:28,006 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 11:21:28,196 ERROR    InternalError(1054, "Unknown column 'himageurl' in 'field list'")
+2019-03-19 12:34:39,421 INFO     L3101510176到L3101510300保存完毕
+2019-03-19 12:35:23,447 INFO     L3101160131到L3101160296保存完毕
+2019-03-19 12:40:57,982 ERROR    ProgrammingError(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '静安','https://image1.ljcdn.com/310000-inspection/124e3330-4970-4835-bcc3-7f49' at line 1")
+2019-03-19 12:54:22,766 ERROR    L3101200182房源第1页未完成
+2019-03-19 12:54:24,016 ERROR    Traceback (most recent call last):
+  File "D:\Miniconda\lib\site-packages\urllib3\connectionpool.py", line 384, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "D:\Miniconda\lib\site-packages\urllib3\connectionpool.py", line 380, in _make_request
+    httplib_response = conn.getresponse()
+  File "D:\Miniconda\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "D:\Miniconda\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "D:\Miniconda\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "D:\Miniconda\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "D:\Miniconda\lib\ssl.py", line 1049, in recv_into
+    return self.read(nbytes, buffer)
+  File "D:\Miniconda\lib\ssl.py", line 908, in read
+    return self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Miniconda\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "D:\Miniconda\lib\site-packages\urllib3\connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "D:\Miniconda\lib\site-packages\urllib3\util\retry.py", line 367, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "D:\Miniconda\lib\site-packages\urllib3\packages\six.py", line 686, in reraise
+    raise value
+  File "D:\Miniconda\lib\site-packages\urllib3\connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "D:\Miniconda\lib\site-packages\urllib3\connectionpool.py", line 386, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "D:\Miniconda\lib\site-packages\urllib3\connectionpool.py", line 306, in _raise_timeout
+    raise ReadTimeoutError(self, url, "Read timed out. (read timeout=%s)" % timeout_value)
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='sh.lianjia.com', port=443): Read timed out. (read timeout=10)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 249, in get_xiaoquhousesinfo
+    r=requests.get(zufangurl2,timeout=10,headers=headers,params=payload).content
+  File "D:\Miniconda\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "D:\Miniconda\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\Miniconda\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\Miniconda\lib\site-packages\requests\sessions.py", line 668, in send
+    history = [resp for resp in gen] if allow_redirects else []
+  File "D:\Miniconda\lib\site-packages\requests\sessions.py", line 668, in <listcomp>
+    history = [resp for resp in gen] if allow_redirects else []
+  File "D:\Miniconda\lib\site-packages\requests\sessions.py", line 247, in resolve_redirects
+    **adapter_kwargs
+  File "D:\Miniconda\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\Miniconda\lib\site-packages\requests\adapters.py", line 529, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='sh.lianjia.com', port=443): Read timed out. (read timeout=10)
+
+2019-03-19 12:54:24,127 ERROR    L3101120072房源第1页未完成
+2019-03-19 12:54:24,506 ERROR    Traceback (most recent call last):
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 360, in _error_catcher
+    yield
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 666, in read_chunked
+    self._update_chunk_length()
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 598, in _update_chunk_length
+    line = self._fp.fp.readline()
+  File "D:\Miniconda\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "D:\Miniconda\lib\ssl.py", line 1049, in recv_into
+    return self.read(nbytes, buffer)
+  File "D:\Miniconda\lib\ssl.py", line 908, in read
+    return self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Miniconda\lib\site-packages\requests\models.py", line 750, in generate
+    for chunk in self.raw.stream(chunk_size, decode_content=True):
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 490, in stream
+    for line in self.read_chunked(amt, decode_content=decode_content):
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 694, in read_chunked
+    self._original_response.close()
+  File "D:\Miniconda\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 365, in _error_catcher
+    raise ReadTimeoutError(self._pool, None, 'Read timed out.')
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='sh.lianjia.com', port=443): Read timed out.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 249, in get_xiaoquhousesinfo
+    r=requests.get(zufangurl2,timeout=10,headers=headers,params=payload).content
+  File "D:\Miniconda\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "D:\Miniconda\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\Miniconda\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\Miniconda\lib\site-packages\requests\sessions.py", line 668, in send
+    history = [resp for resp in gen] if allow_redirects else []
+  File "D:\Miniconda\lib\site-packages\requests\sessions.py", line 668, in <listcomp>
+    history = [resp for resp in gen] if allow_redirects else []
+  File "D:\Miniconda\lib\site-packages\requests\sessions.py", line 247, in resolve_redirects
+    **adapter_kwargs
+  File "D:\Miniconda\lib\site-packages\requests\sessions.py", line 686, in send
+    r.content
+  File "D:\Miniconda\lib\site-packages\requests\models.py", line 828, in content
+    self._content = b''.join(self.iter_content(CONTENT_CHUNK_SIZE)) or b''
+  File "D:\Miniconda\lib\site-packages\requests\models.py", line 757, in generate
+    raise ConnectionError(e)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='sh.lianjia.com', port=443): Read timed out.
+
+2019-03-19 12:54:24,896 ERROR    L3101080145房源第1页未完成
+2019-03-19 12:54:25,280 ERROR    Traceback (most recent call last):
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 360, in _error_catcher
+    yield
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 666, in read_chunked
+    self._update_chunk_length()
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 598, in _update_chunk_length
+    line = self._fp.fp.readline()
+  File "D:\Miniconda\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "D:\Miniconda\lib\ssl.py", line 1049, in recv_into
+    return self.read(nbytes, buffer)
+  File "D:\Miniconda\lib\ssl.py", line 908, in read
+    return self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Miniconda\lib\site-packages\requests\models.py", line 750, in generate
+    for chunk in self.raw.stream(chunk_size, decode_content=True):
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 490, in stream
+    for line in self.read_chunked(amt, decode_content=decode_content):
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 694, in read_chunked
+    self._original_response.close()
+  File "D:\Miniconda\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 365, in _error_catcher
+    raise ReadTimeoutError(self._pool, None, 'Read timed out.')
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='sh.lianjia.com', port=443): Read timed out.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 249, in get_xiaoquhousesinfo
+    r=requests.get(zufangurl2,timeout=10,headers=headers,params=payload).content
+  File "D:\Miniconda\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "D:\Miniconda\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\Miniconda\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\Miniconda\lib\site-packages\requests\sessions.py", line 668, in send
+    history = [resp for resp in gen] if allow_redirects else []
+  File "D:\Miniconda\lib\site-packages\requests\sessions.py", line 668, in <listcomp>
+    history = [resp for resp in gen] if allow_redirects else []
+  File "D:\Miniconda\lib\site-packages\requests\sessions.py", line 247, in resolve_redirects
+    **adapter_kwargs
+  File "D:\Miniconda\lib\site-packages\requests\sessions.py", line 686, in send
+    r.content
+  File "D:\Miniconda\lib\site-packages\requests\models.py", line 828, in content
+    self._content = b''.join(self.iter_content(CONTENT_CHUNK_SIZE)) or b''
+  File "D:\Miniconda\lib\site-packages\requests\models.py", line 757, in generate
+    raise ConnectionError(e)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='sh.lianjia.com', port=443): Read timed out.
+
+2019-03-19 12:54:26,232 ERROR    L3101130109房源第1页未完成
+2019-03-19 12:54:26,669 ERROR    Traceback (most recent call last):
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 360, in _error_catcher
+    yield
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 666, in read_chunked
+    self._update_chunk_length()
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 598, in _update_chunk_length
+    line = self._fp.fp.readline()
+  File "D:\Miniconda\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "D:\Miniconda\lib\ssl.py", line 1049, in recv_into
+    return self.read(nbytes, buffer)
+  File "D:\Miniconda\lib\ssl.py", line 908, in read
+    return self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Miniconda\lib\site-packages\requests\models.py", line 750, in generate
+    for chunk in self.raw.stream(chunk_size, decode_content=True):
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 490, in stream
+    for line in self.read_chunked(amt, decode_content=decode_content):
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 694, in read_chunked
+    self._original_response.close()
+  File "D:\Miniconda\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 365, in _error_catcher
+    raise ReadTimeoutError(self._pool, None, 'Read timed out.')
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='sh.lianjia.com', port=443): Read timed out.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 249, in get_xiaoquhousesinfo
+    r=requests.get(zufangurl2,timeout=10,headers=headers,params=payload).content
+  File "D:\Miniconda\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "D:\Miniconda\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\Miniconda\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\Miniconda\lib\site-packages\requests\sessions.py", line 668, in send
+    history = [resp for resp in gen] if allow_redirects else []
+  File "D:\Miniconda\lib\site-packages\requests\sessions.py", line 668, in <listcomp>
+    history = [resp for resp in gen] if allow_redirects else []
+  File "D:\Miniconda\lib\site-packages\requests\sessions.py", line 247, in resolve_redirects
+    **adapter_kwargs
+  File "D:\Miniconda\lib\site-packages\requests\sessions.py", line 686, in send
+    r.content
+  File "D:\Miniconda\lib\site-packages\requests\models.py", line 828, in content
+    self._content = b''.join(self.iter_content(CONTENT_CHUNK_SIZE)) or b''
+  File "D:\Miniconda\lib\site-packages\requests\models.py", line 757, in generate
+    raise ConnectionError(e)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='sh.lianjia.com', port=443): Read timed out.
+
+2019-03-19 12:54:27,294 ERROR    https://sh.lianjia.com/zufang/c5011000018108/获取失败
+2019-03-19 12:54:27,457 ERROR    Traceback (most recent call last):
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 360, in _error_catcher
+    yield
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 666, in read_chunked
+    self._update_chunk_length()
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 598, in _update_chunk_length
+    line = self._fp.fp.readline()
+  File "D:\Miniconda\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "D:\Miniconda\lib\ssl.py", line 1049, in recv_into
+    return self.read(nbytes, buffer)
+  File "D:\Miniconda\lib\ssl.py", line 908, in read
+    return self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Miniconda\lib\site-packages\requests\models.py", line 750, in generate
+    for chunk in self.raw.stream(chunk_size, decode_content=True):
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 490, in stream
+    for line in self.read_chunked(amt, decode_content=decode_content):
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 694, in read_chunked
+    self._original_response.close()
+  File "D:\Miniconda\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 365, in _error_catcher
+    raise ReadTimeoutError(self._pool, None, 'Read timed out.')
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='sh.lianjia.com', port=443): Read timed out.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 209, in get_xiaoquhousespage
+    r=requests.get(zufangurl,timeout=10,params=payload,headers=headers).text
+  File "D:\Miniconda\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "D:\Miniconda\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\Miniconda\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\Miniconda\lib\site-packages\requests\sessions.py", line 686, in send
+    r.content
+  File "D:\Miniconda\lib\site-packages\requests\models.py", line 828, in content
+    self._content = b''.join(self.iter_content(CONTENT_CHUNK_SIZE)) or b''
+  File "D:\Miniconda\lib\site-packages\requests\models.py", line 757, in generate
+    raise ConnectionError(e)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='sh.lianjia.com', port=443): Read timed out.
+
+2019-03-19 12:56:24,165 ERROR    下载图片<HTTPError 404: 'Not Found'>
+2019-03-19 13:01:47,363 ERROR    下载图片URLError(TimeoutError(10060, '由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。', None, 10060, None))
+2019-03-19 13:01:52,876 ERROR    下载图片URLError(TimeoutError(10060, '由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。', None, 10060, None))
+2019-03-19 13:04:30,181 INFO     L3101200194到L3101200300保存完毕
+2019-03-19 13:12:17,683 ERROR    https://sh.lianjia.com/zufang/c5011000015425/获取失败
+2019-03-19 13:12:17,862 ERROR    Traceback (most recent call last):
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 360, in _error_catcher
+    yield
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 666, in read_chunked
+    self._update_chunk_length()
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 598, in _update_chunk_length
+    line = self._fp.fp.readline()
+  File "D:\Miniconda\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "D:\Miniconda\lib\ssl.py", line 1049, in recv_into
+    return self.read(nbytes, buffer)
+  File "D:\Miniconda\lib\ssl.py", line 908, in read
+    return self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Miniconda\lib\site-packages\requests\models.py", line 750, in generate
+    for chunk in self.raw.stream(chunk_size, decode_content=True):
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 490, in stream
+    for line in self.read_chunked(amt, decode_content=decode_content):
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 694, in read_chunked
+    self._original_response.close()
+  File "D:\Miniconda\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 365, in _error_catcher
+    raise ReadTimeoutError(self._pool, None, 'Read timed out.')
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='sh.lianjia.com', port=443): Read timed out.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 209, in get_xiaoquhousespage
+    r=requests.get(zufangurl,timeout=10,params=payload,headers=headers).text
+  File "D:\Miniconda\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "D:\Miniconda\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\Miniconda\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\Miniconda\lib\site-packages\requests\sessions.py", line 686, in send
+    r.content
+  File "D:\Miniconda\lib\site-packages\requests\models.py", line 828, in content
+    self._content = b''.join(self.iter_content(CONTENT_CHUNK_SIZE)) or b''
+  File "D:\Miniconda\lib\site-packages\requests\models.py", line 757, in generate
+    raise ConnectionError(e)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='sh.lianjia.com', port=443): Read timed out.
+
+2019-03-19 13:12:20,527 ERROR    下载图片URLError(TimeoutError(10060, '由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。', None, 10060, None))
+2019-03-19 13:14:48,718 ERROR    https://sh.lianjia.com/zufang/c5011000013249/获取失败
+2019-03-19 13:14:48,741 ERROR    Traceback (most recent call last):
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 360, in _error_catcher
+    yield
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 666, in read_chunked
+    self._update_chunk_length()
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 598, in _update_chunk_length
+    line = self._fp.fp.readline()
+  File "D:\Miniconda\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "D:\Miniconda\lib\ssl.py", line 1049, in recv_into
+    return self.read(nbytes, buffer)
+  File "D:\Miniconda\lib\ssl.py", line 908, in read
+    return self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Miniconda\lib\site-packages\requests\models.py", line 750, in generate
+    for chunk in self.raw.stream(chunk_size, decode_content=True):
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 490, in stream
+    for line in self.read_chunked(amt, decode_content=decode_content):
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 694, in read_chunked
+    self._original_response.close()
+  File "D:\Miniconda\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 365, in _error_catcher
+    raise ReadTimeoutError(self._pool, None, 'Read timed out.')
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='sh.lianjia.com', port=443): Read timed out.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 209, in get_xiaoquhousespage
+    r=requests.get(zufangurl,timeout=10,params=payload,headers=headers).text
+  File "D:\Miniconda\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "D:\Miniconda\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\Miniconda\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\Miniconda\lib\site-packages\requests\sessions.py", line 686, in send
+    r.content
+  File "D:\Miniconda\lib\site-packages\requests\models.py", line 828, in content
+    self._content = b''.join(self.iter_content(CONTENT_CHUNK_SIZE)) or b''
+  File "D:\Miniconda\lib\site-packages\requests\models.py", line 757, in generate
+    raise ConnectionError(e)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='sh.lianjia.com', port=443): Read timed out.
+
+2019-03-19 13:15:06,839 INFO     L3101080286到L3101080300保存完毕
+2019-03-19 13:16:39,590 INFO     L3101090271到L3101090300保存完毕
+2019-03-19 13:18:54,671 ERROR    https://sh.lianjia.com/zufang/c5011000009991/获取失败
+2019-03-19 13:18:54,694 ERROR    Traceback (most recent call last):
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 360, in _error_catcher
+    yield
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 666, in read_chunked
+    self._update_chunk_length()
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 598, in _update_chunk_length
+    line = self._fp.fp.readline()
+  File "D:\Miniconda\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "D:\Miniconda\lib\ssl.py", line 1049, in recv_into
+    return self.read(nbytes, buffer)
+  File "D:\Miniconda\lib\ssl.py", line 908, in read
+    return self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Miniconda\lib\site-packages\requests\models.py", line 750, in generate
+    for chunk in self.raw.stream(chunk_size, decode_content=True):
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 490, in stream
+    for line in self.read_chunked(amt, decode_content=decode_content):
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 694, in read_chunked
+    self._original_response.close()
+  File "D:\Miniconda\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 365, in _error_catcher
+    raise ReadTimeoutError(self._pool, None, 'Read timed out.')
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='sh.lianjia.com', port=443): Read timed out.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 209, in get_xiaoquhousespage
+    r=requests.get(zufangurl,timeout=10,params=payload,headers=headers).text
+  File "D:\Miniconda\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "D:\Miniconda\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\Miniconda\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\Miniconda\lib\site-packages\requests\sessions.py", line 686, in send
+    r.content
+  File "D:\Miniconda\lib\site-packages\requests\models.py", line 828, in content
+    self._content = b''.join(self.iter_content(CONTENT_CHUNK_SIZE)) or b''
+  File "D:\Miniconda\lib\site-packages\requests\models.py", line 757, in generate
+    raise ConnectionError(e)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='sh.lianjia.com', port=443): Read timed out.
+
+2019-03-19 13:20:33,933 ERROR    L3101150145房源第1页未完成
+2019-03-19 13:20:34,465 ERROR    Traceback (most recent call last):
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 360, in _error_catcher
+    yield
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 666, in read_chunked
+    self._update_chunk_length()
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 598, in _update_chunk_length
+    line = self._fp.fp.readline()
+  File "D:\Miniconda\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "D:\Miniconda\lib\ssl.py", line 1049, in recv_into
+    return self.read(nbytes, buffer)
+  File "D:\Miniconda\lib\ssl.py", line 908, in read
+    return self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Miniconda\lib\site-packages\requests\models.py", line 750, in generate
+    for chunk in self.raw.stream(chunk_size, decode_content=True):
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 490, in stream
+    for line in self.read_chunked(amt, decode_content=decode_content):
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 694, in read_chunked
+    self._original_response.close()
+  File "D:\Miniconda\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 365, in _error_catcher
+    raise ReadTimeoutError(self._pool, None, 'Read timed out.')
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='sh.lianjia.com', port=443): Read timed out.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 249, in get_xiaoquhousesinfo
+    r=requests.get(zufangurl2,timeout=10,headers=headers,params=payload).content
+  File "D:\Miniconda\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "D:\Miniconda\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\Miniconda\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\Miniconda\lib\site-packages\requests\sessions.py", line 668, in send
+    history = [resp for resp in gen] if allow_redirects else []
+  File "D:\Miniconda\lib\site-packages\requests\sessions.py", line 668, in <listcomp>
+    history = [resp for resp in gen] if allow_redirects else []
+  File "D:\Miniconda\lib\site-packages\requests\sessions.py", line 247, in resolve_redirects
+    **adapter_kwargs
+  File "D:\Miniconda\lib\site-packages\requests\sessions.py", line 686, in send
+    r.content
+  File "D:\Miniconda\lib\site-packages\requests\models.py", line 828, in content
+    self._content = b''.join(self.iter_content(CONTENT_CHUNK_SIZE)) or b''
+  File "D:\Miniconda\lib\site-packages\requests\models.py", line 757, in generate
+    raise ConnectionError(e)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='sh.lianjia.com', port=443): Read timed out.
+
+2019-03-19 13:21:30,789 INFO     L3101060282到L3101060300保存完毕
+2019-03-19 13:22:40,624 ERROR    https://sh.lianjia.com/zufang/c5011000010225/获取失败
+2019-03-19 13:22:40,626 ERROR    Traceback (most recent call last):
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 360, in _error_catcher
+    yield
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 666, in read_chunked
+    self._update_chunk_length()
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 598, in _update_chunk_length
+    line = self._fp.fp.readline()
+  File "D:\Miniconda\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "D:\Miniconda\lib\ssl.py", line 1049, in recv_into
+    return self.read(nbytes, buffer)
+  File "D:\Miniconda\lib\ssl.py", line 908, in read
+    return self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Miniconda\lib\site-packages\requests\models.py", line 750, in generate
+    for chunk in self.raw.stream(chunk_size, decode_content=True):
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 490, in stream
+    for line in self.read_chunked(amt, decode_content=decode_content):
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 694, in read_chunked
+    self._original_response.close()
+  File "D:\Miniconda\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 365, in _error_catcher
+    raise ReadTimeoutError(self._pool, None, 'Read timed out.')
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='sh.lianjia.com', port=443): Read timed out.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 209, in get_xiaoquhousespage
+    r=requests.get(zufangurl,timeout=10,params=payload,headers=headers).text
+  File "D:\Miniconda\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "D:\Miniconda\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\Miniconda\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\Miniconda\lib\site-packages\requests\sessions.py", line 686, in send
+    r.content
+  File "D:\Miniconda\lib\site-packages\requests\models.py", line 828, in content
+    self._content = b''.join(self.iter_content(CONTENT_CHUNK_SIZE)) or b''
+  File "D:\Miniconda\lib\site-packages\requests\models.py", line 757, in generate
+    raise ConnectionError(e)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='sh.lianjia.com', port=443): Read timed out.
+
+2019-03-19 13:22:51,394 ERROR    下载图片URLError(TimeoutError(10060, '由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。', None, 10060, None))
+2019-03-19 13:22:52,647 ERROR    下载图片URLError(TimeoutError(10060, '由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。', None, 10060, None))
+2019-03-19 13:22:53,786 ERROR    下载图片URLError(TimeoutError(10060, '由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。', None, 10060, None))
+2019-03-19 13:23:04,519 INFO     L3101100279到L3101100300保存完毕
+2019-03-19 13:26:39,418 INFO     L3101130289到L3101130300保存完毕
+2019-03-19 13:29:17,202 INFO     L3101040264到L3101040300保存完毕
+2019-03-19 13:30:38,411 ERROR    https://sh.lianjia.com/zufang/c5011000004929/获取失败
+2019-03-19 13:30:38,420 ERROR    Traceback (most recent call last):
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 360, in _error_catcher
+    yield
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 666, in read_chunked
+    self._update_chunk_length()
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 598, in _update_chunk_length
+    line = self._fp.fp.readline()
+  File "D:\Miniconda\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "D:\Miniconda\lib\ssl.py", line 1049, in recv_into
+    return self.read(nbytes, buffer)
+  File "D:\Miniconda\lib\ssl.py", line 908, in read
+    return self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Miniconda\lib\site-packages\requests\models.py", line 750, in generate
+    for chunk in self.raw.stream(chunk_size, decode_content=True):
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 490, in stream
+    for line in self.read_chunked(amt, decode_content=decode_content):
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 694, in read_chunked
+    self._original_response.close()
+  File "D:\Miniconda\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 365, in _error_catcher
+    raise ReadTimeoutError(self._pool, None, 'Read timed out.')
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='sh.lianjia.com', port=443): Read timed out.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 209, in get_xiaoquhousespage
+    r=requests.get(zufangurl,timeout=10,params=payload,headers=headers).text
+  File "D:\Miniconda\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "D:\Miniconda\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\Miniconda\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\Miniconda\lib\site-packages\requests\sessions.py", line 686, in send
+    r.content
+  File "D:\Miniconda\lib\site-packages\requests\models.py", line 828, in content
+    self._content = b''.join(self.iter_content(CONTENT_CHUNK_SIZE)) or b''
+  File "D:\Miniconda\lib\site-packages\requests\models.py", line 757, in generate
+    raise ConnectionError(e)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='sh.lianjia.com', port=443): Read timed out.
+
+2019-03-19 13:30:38,830 ERROR    L3101010264房源第1页未完成
+2019-03-19 13:30:38,841 ERROR    Traceback (most recent call last):
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 360, in _error_catcher
+    yield
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 666, in read_chunked
+    self._update_chunk_length()
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 598, in _update_chunk_length
+    line = self._fp.fp.readline()
+  File "D:\Miniconda\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "D:\Miniconda\lib\ssl.py", line 1049, in recv_into
+    return self.read(nbytes, buffer)
+  File "D:\Miniconda\lib\ssl.py", line 908, in read
+    return self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Miniconda\lib\site-packages\requests\models.py", line 750, in generate
+    for chunk in self.raw.stream(chunk_size, decode_content=True):
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 490, in stream
+    for line in self.read_chunked(amt, decode_content=decode_content):
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 694, in read_chunked
+    self._original_response.close()
+  File "D:\Miniconda\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 365, in _error_catcher
+    raise ReadTimeoutError(self._pool, None, 'Read timed out.')
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='sh.lianjia.com', port=443): Read timed out.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 249, in get_xiaoquhousesinfo
+    r=requests.get(zufangurl2,timeout=10,headers=headers,params=payload).content
+  File "D:\Miniconda\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "D:\Miniconda\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\Miniconda\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\Miniconda\lib\site-packages\requests\sessions.py", line 668, in send
+    history = [resp for resp in gen] if allow_redirects else []
+  File "D:\Miniconda\lib\site-packages\requests\sessions.py", line 668, in <listcomp>
+    history = [resp for resp in gen] if allow_redirects else []
+  File "D:\Miniconda\lib\site-packages\requests\sessions.py", line 247, in resolve_redirects
+    **adapter_kwargs
+  File "D:\Miniconda\lib\site-packages\requests\sessions.py", line 686, in send
+    r.content
+  File "D:\Miniconda\lib\site-packages\requests\models.py", line 828, in content
+    self._content = b''.join(self.iter_content(CONTENT_CHUNK_SIZE)) or b''
+  File "D:\Miniconda\lib\site-packages\requests\models.py", line 757, in generate
+    raise ConnectionError(e)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='sh.lianjia.com', port=443): Read timed out.
+
+2019-03-19 13:36:29,849 ERROR    https://sh.lianjia.com/zufang/c5011000002107/获取失败
+2019-03-19 13:36:29,849 ERROR    Traceback (most recent call last):
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 360, in _error_catcher
+    yield
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 666, in read_chunked
+    self._update_chunk_length()
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 598, in _update_chunk_length
+    line = self._fp.fp.readline()
+  File "D:\Miniconda\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "D:\Miniconda\lib\ssl.py", line 1049, in recv_into
+    return self.read(nbytes, buffer)
+  File "D:\Miniconda\lib\ssl.py", line 908, in read
+    return self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Miniconda\lib\site-packages\requests\models.py", line 750, in generate
+    for chunk in self.raw.stream(chunk_size, decode_content=True):
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 490, in stream
+    for line in self.read_chunked(amt, decode_content=decode_content):
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 694, in read_chunked
+    self._original_response.close()
+  File "D:\Miniconda\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\Miniconda\lib\site-packages\urllib3\response.py", line 365, in _error_catcher
+    raise ReadTimeoutError(self._pool, None, 'Read timed out.')
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='sh.lianjia.com', port=443): Read timed out.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\spider\spidermain\mainspider.py", line 209, in get_xiaoquhousespage
+    r=requests.get(zufangurl,timeout=10,params=payload,headers=headers).text
+  File "D:\Miniconda\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "D:\Miniconda\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "D:\Miniconda\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\Miniconda\lib\site-packages\requests\sessions.py", line 686, in send
+    r.content
+  File "D:\Miniconda\lib\site-packages\requests\models.py", line 828, in content
+    self._content = b''.join(self.iter_content(CONTENT_CHUNK_SIZE)) or b''
+  File "D:\Miniconda\lib\site-packages\requests\models.py", line 757, in generate
+    raise ConnectionError(e)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='sh.lianjia.com', port=443): Read timed out.
+
+2019-03-19 13:36:40,801 INFO     L3101070226到L3101070300保存完毕
+2019-03-19 13:38:03,217 INFO     L3101140218到L3101140300保存完毕
+2019-03-19 13:43:13,841 INFO     L3101170184到L3101170300保存完毕
+2019-03-19 13:43:24,344 INFO     L3101120192到L3101120300保存完毕
+2019-03-19 13:50:44,656 INFO     L3101010264到L3101010300保存完毕
+2019-03-19 13:53:10,019 INFO     L3101180251到L3101180300保存完毕
+2019-03-19 13:54:15,344 INFO     L3101050255到L3101050300保存完毕
+2019-03-19 13:54:26,907 INFO     L3101150272到L3101150300保存完毕
+2019-03-19 14:48:20,613 ERROR    ProgrammingError(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% order by x.hid' at line 1")
+2019-03-19 14:48:20,614 ERROR    ProgrammingError(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% order by x.hid' at line 1")
+2019-03-19 14:48:20,623 ERROR    ProgrammingError(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% order by x.hid' at line 1")
+2019-03-19 14:48:20,630 ERROR    ProgrammingError(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% order by x.hid' at line 1")
+2019-03-19 14:48:20,633 ERROR    ProgrammingError(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% order by x.hid' at line 1")
+2019-03-19 14:48:20,633 ERROR    ProgrammingError(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% order by x.hid' at line 1")
+2019-03-19 14:48:20,636 ERROR    ProgrammingError(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% order by x.hid' at line 1")
+2019-03-19 14:48:20,641 ERROR    ProgrammingError(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% order by x.hid' at line 1")
+2019-03-19 14:48:20,642 ERROR    ProgrammingError(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% order by x.hid' at line 1")
+2019-03-19 14:48:20,654 ERROR    ProgrammingError(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% order by x.hid' at line 1")
+2019-03-19 14:48:20,658 ERROR    ProgrammingError(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% order by x.hid' at line 1")
+2019-03-19 14:48:20,661 ERROR    ProgrammingError(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% order by x.hid' at line 1")
+2019-03-19 14:48:20,669 ERROR    ProgrammingError(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% order by x.hid' at line 1")
+2019-03-19 14:48:20,671 ERROR    ProgrammingError(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% order by x.hid' at line 1")
+2019-03-19 14:48:20,673 ERROR    ProgrammingError(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% order by x.hid' at line 1")
+2019-03-19 14:48:20,674 ERROR    ProgrammingError(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% order by x.hid' at line 1")
+2019-03-19 14:48:20,678 ERROR    ProgrammingError(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% order by x.hid' at line 1")
+2019-03-19 14:53:06,242 ERROR    ProgrammingError(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% order by x.hid' at line 1")
+2019-03-19 14:53:06,244 ERROR    ProgrammingError(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% order by x.hid' at line 1")
+2019-03-19 14:53:06,251 ERROR    ProgrammingError(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% order by x.hid' at line 1")
+2019-03-19 14:53:06,251 ERROR    ProgrammingError(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% order by x.hid' at line 1")
+2019-03-19 14:53:06,264 ERROR    ProgrammingError(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% order by x.hid' at line 1")
+2019-03-19 14:53:06,267 ERROR    ProgrammingError(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% order by x.hid' at line 1")
+2019-03-19 14:53:06,267 ERROR    ProgrammingError(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% order by x.hid' at line 1")
+2019-03-19 14:53:06,273 ERROR    ProgrammingError(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% order by x.hid' at line 1")
+2019-03-19 14:53:06,284 ERROR    ProgrammingError(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% order by x.hid' at line 1")
+2019-03-19 14:53:06,286 ERROR    ProgrammingError(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% order by x.hid' at line 1")
+2019-03-19 14:53:06,289 ERROR    ProgrammingError(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% order by x.hid' at line 1")
+2019-03-19 14:53:06,290 ERROR    ProgrammingError(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% order by x.hid' at line 1")
+2019-03-19 14:53:06,293 ERROR    ProgrammingError(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% order by x.hid' at line 1")
+2019-03-19 14:53:06,303 ERROR    ProgrammingError(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% order by x.hid' at line 1")
+2019-03-19 14:53:06,304 ERROR    ProgrammingError(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% order by x.hid' at line 1")
+2019-03-19 14:53:06,306 ERROR    ProgrammingError(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% order by x.hid' at line 1")
+2019-03-19 14:53:06,307 ERROR    ProgrammingError(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '% order by x.hid' at line 1")
+2019-03-19 14:55:54,891 ERROR    L31010100010001已失效
+2019-03-19 14:56:08,445 ERROR    L31011800020002已失效
+2019-03-19 15:02:49,971 ERROR    L31010100010001已失效
+2019-03-19 15:02:57,165 ERROR    L31011800020002已失效
+2019-03-19 15:03:08,670 INFO     L31015100870001到L31015100870001(包含)保存完毕
+2019-03-19 15:05:39,693 INFO     L31011600130001到L31011601890001(包含)保存完毕
+2019-03-19 15:10:04,818 ERROR    L31010100010001已失效
+2019-03-19 15:10:04,844 ERROR    L31011800020002已失效
+2019-03-19 15:15:23,828 ERROR    L31010700010047已失效
+2019-03-19 15:17:34,708 ERROR    L31011000070006已失效
+2019-03-19 15:19:48,223 ERROR    L31010900100004已失效
+2019-03-19 15:21:58,498 ERROR    L31011700020041已失效
+2019-03-19 15:24:40,612 ERROR    L31010100050028已失效
+2019-03-19 15:25:22,370 ERROR    L31010700010047已失效
+2019-03-19 15:25:22,467 ERROR    L31010900100004已失效
+2019-03-19 15:25:23,608 ERROR    L31010100010001已失效
+2019-03-19 15:25:23,888 ERROR    L31011800020002已失效
+2019-03-19 15:25:24,517 ERROR    L31011000070006已失效
+2019-03-19 15:25:24,990 ERROR    L31011700020041已失效
+2019-03-19 15:25:28,516 ERROR    L31010100050028已失效
+2019-03-19 15:37:59,290 ERROR    L31011000430002已失效
+2019-03-19 15:38:13,084 ERROR    L31011500060003已失效
+2019-03-19 15:39:55,412 ERROR    L31011500060017已失效
+2019-03-19 19:21:06,474 ERROR    L31011000070006已失效
+2019-03-19 19:21:06,636 ERROR    L31010900100004已失效
+2019-03-19 19:21:06,829 ERROR    L31011800020002已失效
+2019-03-19 19:21:07,161 ERROR    L31011700020041已失效
+2019-03-19 19:21:07,736 ERROR    L31010700010047已失效
+2019-03-19 19:21:07,796 ERROR    L31010100010001已失效
+2019-03-19 19:21:09,058 ERROR    L31011500060003已失效
+2019-03-19 19:21:11,099 ERROR    L31011500060017已失效
+2019-03-19 19:21:11,748 ERROR    L31011000430002已失效
+2019-03-19 19:21:12,069 ERROR    L31010100050028已失效
+2019-03-19 19:21:13,225 ERROR    L31011200210001已失效
+2019-03-19 19:21:26,261 ERROR    L31011300330005已失效
+2019-03-19 19:22:15,643 ERROR    L31011700090006已失效
+2019-03-19 19:26:05,529 ERROR    L31010400690001已失效
+2019-03-19 19:29:58,321 ERROR    L31011800300008已失效
+2019-03-19 19:31:34,708 ERROR    L31011300510001未完成
+2019-03-19 19:31:34,709 ERROR    L31010100190004未完成
+2019-03-19 19:31:34,709 ERROR    L31011400370015未完成
+2019-03-19 19:31:39,768 ERROR    L31011700160007未完成
+2019-03-19 19:36:53,851 ERROR    L31011000800005已失效
+2019-03-19 19:39:45,603 ERROR    L31011000070006已失效
+2019-03-19 19:39:45,616 ERROR    L31011300330005已失效
+2019-03-19 19:39:45,704 ERROR    L31011200210001已失效
+2019-03-19 19:39:45,742 ERROR    L31010100010001已失效
+2019-03-19 19:39:45,744 ERROR    L31010700010047已失效
+2019-03-19 19:39:45,911 ERROR    L31011800020002已失效
+2019-03-19 19:39:45,938 ERROR    L31010400690001已失效
+2019-03-19 19:39:46,163 ERROR    L31011500060003已失效
+2019-03-19 19:39:46,294 ERROR    L31011700020041已失效
+2019-03-19 19:39:46,417 ERROR    L31010900100004已失效
+2019-03-19 19:39:48,000 ERROR    L31011000430002已失效
+2019-03-19 19:39:49,004 ERROR    L31010100050028已失效
+2019-03-19 19:39:49,154 ERROR    L31011800300008已失效
+2019-03-19 19:39:49,720 ERROR    L31011500060017已失效
+2019-03-19 19:39:50,011 ERROR    L31011700090006已失效
+2019-03-19 19:39:50,244 ERROR    L31011000800005已失效
+2019-03-19 19:40:31,884 ERROR    L31010100200002已失效
+2019-03-19 19:41:28,519 ERROR    L31011700170011已失效
+2019-03-19 19:42:15,554 ERROR    L31011400420003已失效
+2019-03-19 19:44:56,477 ERROR    L31011500130005已失效
+2019-03-19 19:46:32,718 ERROR    L31010801260002已失效
+2019-03-19 19:46:45,247 ERROR    L31011300650003已失效
+2019-03-19 19:46:58,623 ERROR    L31010801260006已失效
+2019-03-19 19:51:13,804 ERROR    L31011001380001已失效
+2019-03-19 19:54:34,975 INFO     L31012001290001到L31012002810001(包含)保存完毕
+2019-03-19 19:57:34,732 ERROR    L31010901860001已失效
+2019-03-19 19:59:17,920 ERROR    L31011200520002已失效
+2019-03-19 20:03:29,938 ERROR    L31011001940002已失效
+2019-03-19 20:05:36,594 ERROR    L31010700700002已失效
+2019-03-19 20:05:55,056 ERROR    L31011700350008已失效
+2019-03-19 20:08:43,195 INFO     L31010800960001到L31010803000001(包含)保存完毕
+2019-03-19 20:11:08,124 INFO     L31010900100004到L31010902980001(包含)保存完毕
+2019-03-19 20:11:29,430 ERROR    L31011002500002已失效
+2019-03-19 20:14:01,685 ERROR    L31011401050006已失效
+2019-03-19 20:16:34,376 ERROR    L31010600930008已失效
+2019-03-19 20:16:58,335 ERROR    L31010401820002已失效
+2019-03-19 20:16:58,711 ERROR    L31011700440005已失效
+2019-03-19 20:18:02,351 ERROR    L31011401060038未完成
+2019-03-19 20:18:38,622 INFO     L31011000070006到L31011002970003(包含)保存完毕
+2019-03-19 20:20:02,349 ERROR    L31011301590002已失效
+2019-03-19 20:24:04,749 ERROR    L31011301890003已失效
+2019-03-19 20:25:01,644 ERROR    L31011201110002已失效
+2019-03-19 20:25:22,274 ERROR    L31011201130003已失效
+2019-03-19 20:25:42,894 ERROR    L31011201150002已失效
+2019-03-19 20:26:07,749 ERROR    L31010402360001已失效
+2019-03-19 20:26:09,333 ERROR    L31011201170008已失效
+2019-03-19 20:26:11,690 ERROR    L31011500550001已失效
+2019-03-19 20:26:32,244 ERROR    L31011201260002已失效
+2019-03-19 20:26:47,809 INFO     L31010600170011到L31010602990001(包含)保存完毕
+2019-03-19 20:27:01,090 ERROR    L31010402460001已失效
+2019-03-19 20:27:37,844 ERROR    L31011302370002已失效
+2019-03-19 20:27:53,674 ERROR    L31011700740004已失效
+2019-03-19 20:27:58,237 ERROR    L31010101590002已失效
+2019-03-19 20:28:09,197 ERROR    L31010101630004已失效
+2019-03-19 20:28:11,812 ERROR    L31011302510001已失效
+2019-03-19 20:29:38,816 ERROR    L31010501970001已失效
+2019-03-19 20:29:43,412 ERROR    L31011302810002已失效
+2019-03-19 20:29:55,118 ERROR    L31011201430003已失效
+2019-03-19 20:30:36,511 ERROR    L31010502140003已失效
+2019-03-19 20:30:45,039 INFO     L31011300330005到L31011303000001(包含)保存完毕
+2019-03-19 20:31:40,488 INFO     L31010400690001到L31010402990006(包含)保存完毕
+2019-03-19 20:31:54,851 ERROR    L31010701920001已失效
+2019-03-19 20:32:27,295 ERROR    L31010502420001已失效
+2019-03-19 20:33:19,612 INFO     L31010100010001到L31010103000001(包含)保存完毕
+2019-03-19 20:33:28,801 ERROR    L31011500830002已失效
+2019-03-19 20:33:31,006 ERROR    L31011500830004已失效
+2019-03-19 20:34:00,434 ERROR    L31011201810002已失效
+2019-03-19 20:34:20,581 ERROR    L31011201840002已失效
+2019-03-19 20:34:27,149 ERROR    L31011201850002已失效
+2019-03-19 20:35:04,835 INFO     L31010500220018到L31010502990001(包含)保存完毕
+2019-03-19 20:35:26,884 ERROR    L31011701130001已失效
+2019-03-19 20:35:58,107 ERROR    L31011500900010已失效
+2019-03-19 20:36:57,547 ERROR    L31010702770001已失效
+2019-03-19 20:37:29,630 ERROR    ProgrammingError(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Super(国金店)、<br />')' at line 1")
+2019-03-19 20:37:42,956 INFO     L31010700010047到L31010703000002(包含)保存完毕
+2019-03-19 20:37:59,639 ERROR    L31011701260048已失效
+2019-03-19 20:38:15,570 ERROR    L31011202380001已失效
+2019-03-19 20:39:16,713 INFO     L31011800020002到L31011803000001(包含)保存完毕
+2019-03-19 20:40:53,574 INFO     L31011200210001到L31011203000004(包含)保存完毕
+2019-03-19 20:41:20,934 ERROR    L31011701620011已失效
+2019-03-19 20:41:58,781 ERROR    L31011501330002已失效
+2019-03-19 20:42:29,886 ERROR    L31011501400005已失效
+2019-03-19 20:42:52,290 ERROR    L31011501430008已失效
+2019-03-19 20:43:02,365 ERROR    L31011501430016已失效
+2019-03-19 20:43:30,427 ERROR    L31011501480001已失效
+2019-03-19 20:43:35,949 ERROR    L31011501490005已失效
+2019-03-19 20:45:31,734 ERROR    L31011702320006已失效
+2019-03-19 20:48:13,333 INFO     L31011700020041到L31011703000003(包含)保存完毕
+2019-03-19 20:52:07,445 ERROR    L31011502410002已失效
+2019-03-19 20:52:53,881 ERROR    L31011502560001已失效
+2019-03-19 20:55:42,299 ERROR    L31011502930008已失效
+2019-03-19 20:55:55,271 INFO     L31011500060003到L31011503000006(包含)保存完毕
+2019-03-20 17:50:10,911 ERROR    下载图片URLError(FileNotFoundError(2, 'No such file or directory'))
+2019-03-20 17:50:13,834 ERROR    下载图片ContentTooShortError('retrieval incomplete: got only 146932 out of 278117 bytes')
+2019-03-20 17:50:26,209 ERROR    下载图片RemoteDisconnected('Remote end closed connection without response')
+2019-03-20 17:50:28,314 ERROR    下载图片URLError(FileNotFoundError(2, 'No such file or directory'))
+2019-03-20 18:11:03,349 ERROR    下载图片RemoteDisconnected('Remote end closed connection without response')
+2019-03-20 18:11:30,571 ERROR    下载图片RemoteDisconnected('Remote end closed connection without response')
+2019-03-20 18:15:26,637 ERROR    下载图片<HTTPError 404: 'Not Found'>
+2019-03-20 18:15:31,126 ERROR    下载图片<HTTPError 404: 'Not Found'>
+2019-03-20 18:15:38,477 ERROR    下载图片<HTTPError 404: 'Not Found'>
+2019-03-20 18:16:03,472 ERROR    下载图片RemoteDisconnected('Remote end closed connection without response')
+2019-03-20 18:19:39,944 ERROR    下载图片<HTTPError 404: 'Not Found'>
+2019-03-20 18:21:01,329 ERROR    下载图片<HTTPError 404: 'Not Found'>
+2019-03-20 18:21:02,166 ERROR    下载图片<HTTPError 404: 'Not Found'>
+2019-03-20 18:21:42,411 ERROR    下载图片<HTTPError 404: 'Not Found'>
+2019-03-20 18:24:43,613 ERROR    下载图片<HTTPError 404: 'Not Found'>
+2019-03-20 18:26:04,245 ERROR    下载图片<HTTPError 404: 'Not Found'>
+2019-03-20 18:26:04,719 ERROR    下载图片<HTTPError 404: 'Not Found'>
+2019-03-20 18:26:05,200 ERROR    下载图片<HTTPError 404: 'Not Found'>
+2019-03-20 18:26:05,453 ERROR    下载图片<HTTPError 404: 'Not Found'>
+2019-03-20 18:27:04,839 ERROR    下载图片<HTTPError 404: 'Not Found'>
+2019-03-20 18:29:47,001 ERROR    下载图片<HTTPError 404: 'Not Found'>
+2019-03-20 18:33:51,375 ERROR    下载图片<HTTPError 404: 'Not Found'>
+2019-03-20 18:33:54,987 ERROR    下载图片<HTTPError 404: 'Not Found'>
+2019-03-20 18:35:01,765 ERROR    下载图片<HTTPError 404: 'Not Found'>
+2019-03-20 18:35:32,020 ERROR    下载图片UnicodeEncodeError('ascii', 'GET /310000-inspection/b2656363-338c-45af-8da1-9bc70f94df90.jpg_600x450 - 副本.jpg.780x439.jpg HTTP/1.1', 74, 76, 'ordinal not in range(128)')
+2019-03-20 18:35:32,031 ERROR    下载图片UnicodeEncodeError('ascii', 'GET /310000-inspection/bdd805b1-8937-420f-9b86-e23f91cd866f.jpg_600x450 - 副本.jpg.780x439.jpg HTTP/1.1', 74, 76, 'ordinal not in range(128)')
+2019-03-20 18:39:52,583 ERROR    下载图片<HTTPError 404: 'Not Found'>
+2019-03-20 18:41:35,702 ERROR    下载图片<HTTPError 404: 'Not Found'>
+2019-03-20 18:44:24,729 ERROR    下载图片<HTTPError 404: 'Not Found'>
+2019-03-20 18:44:26,375 ERROR    下载图片<HTTPError 404: 'Not Found'>
+2019-03-20 18:48:24,852 ERROR    下载图片<HTTPError 520: 'Unknown'>
+2019-03-20 18:48:36,868 ERROR    下载图片<HTTPError 404: 'Not Found'>
+2019-03-20 18:48:39,485 ERROR    下载图片<HTTPError 404: 'Not Found'>
+2019-03-20 19:02:27,561 ERROR    下载图片<HTTPError 404: 'Not Found'>
+2019-03-20 19:02:27,905 ERROR    下载图片<HTTPError 404: 'Not Found'>
+2019-03-20 19:02:28,340 ERROR    下载图片<HTTPError 404: 'Not Found'>
+2019-03-20 21:04:25,498 ERROR    下载图片UnicodeEncodeError('ascii', 'GET /310000-inspection/b2656363-338c-45af-8da1-9bc70f94df90.jpg_600x450 - 副本.jpg.780x439.jpg HTTP/1.1', 74, 76, 'ordinal not in range(128)')
+2019-03-20 21:04:25,597 ERROR    下载图片UnicodeEncodeError('ascii', 'GET /310000-inspection/bdd805b1-8937-420f-9b86-e23f91cd866f.jpg_600x450 - 副本.jpg.780x439.jpg HTTP/1.1', 74, 76, 'ordinal not in range(128)')
+2019-03-20 21:04:25,662 ERROR    下载图片<HTTPError 404: 'Not Found'>
+2019-03-20 21:04:25,677 ERROR    下载图片<HTTPError 404: 'Not Found'>
+2019-03-20 21:04:25,684 ERROR    下载图片<HTTPError 404: 'Not Found'>
+2019-03-20 21:04:25,750 ERROR    下载图片<HTTPError 520: 'Unknown'>
+2019-03-20 21:04:25,772 ERROR    下载图片<HTTPError 404: 'Not Found'>
+2019-03-20 21:04:25,868 ERROR    下载图片<HTTPError 404: 'Not Found'>
+2019-03-20 21:04:25,896 ERROR    下载图片<HTTPError 404: 'Not Found'>
+2019-03-20 21:04:25,954 ERROR    下载图片<HTTPError 404: 'Not Found'>
+2019-03-20 21:04:26,042 ERROR    下载图片<HTTPError 404: 'Not Found'>
+2019-03-20 21:04:26,060 ERROR    下载图片<HTTPError 404: 'Not Found'>
+2019-03-20 21:04:26,079 ERROR    下载图片<HTTPError 404: 'Not Found'>
+2019-03-20 21:04:26,114 ERROR    下载图片<HTTPError 404: 'Not Found'>
+2019-03-20 21:04:26,194 ERROR    下载图片<HTTPError 404: 'Not Found'>
+2019-03-20 21:04:26,203 ERROR    下载图片<HTTPError 404: 'Not Found'>
+2019-03-20 21:04:26,326 ERROR    下载图片<HTTPError 404: 'Not Found'>
+2019-03-20 21:04:26,367 ERROR    下载图片<HTTPError 404: 'Not Found'>
+2019-03-20 21:04:26,392 ERROR    下载图片<HTTPError 404: 'Not Found'>
+2019-03-20 21:04:26,440 ERROR    下载图片<HTTPError 404: 'Not Found'>
+2019-03-20 21:04:26,456 ERROR    下载图片<HTTPError 404: 'Not Found'>
+2019-03-20 21:04:26,562 ERROR    下载图片<HTTPError 404: 'Not Found'>
+2019-03-20 21:04:26,589 ERROR    下载图片<HTTPError 404: 'Not Found'>
+2019-03-20 21:04:26,665 ERROR    下载图片<HTTPError 404: 'Not Found'>
+2019-03-20 21:04:26,704 ERROR    下载图片<HTTPError 404: 'Not Found'>
+2019-03-20 21:04:26,856 ERROR    下载图片<HTTPError 404: 'Not Found'>
+2019-03-20 21:04:26,971 ERROR    下载图片<HTTPError 404: 'Not Found'>
+2019-03-20 21:04:27,128 ERROR    下载图片<HTTPError 404: 'Not Found'>
+2019-03-20 21:04:27,168 ERROR    下载图片<HTTPError 404: 'Not Found'>
+2019-03-20 21:11:36,230 ERROR    下载图片<HTTPError 404: 'Not Found'>
+2019-03-20 21:12:18,302 ERROR    下载图片<HTTPError 404: 'Not Found'>
+2019-03-20 21:12:24,240 ERROR    下载图片<HTTPError 404: 'Not Found'>
