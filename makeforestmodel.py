@@ -4,7 +4,8 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.model_selection import GridSearchCV
 from sklearn.ensemble import RandomForestRegressor 
-from sklearn.externals import joblib
+# from sklearn.externals import joblib
+import joblib
 import matplotlib.pyplot as plt
 HOST='localhost'
 USER='root'
@@ -33,6 +34,6 @@ y_test=target[7500:]
 param_grid = {"n_estimators":[5,10,50,100,200,500],"max_depth":[5,10,50,100,200,500]}
 grid_search=GridSearchCV(RandomForestRegressor(),param_grid,cv=5)
 grid_search.fit(X_train,y_train)
-joblib.dump(grid_search,'model.pkl')
+joblib.dump(grid_search,'model_1.pkl')
 print(grid_search.best_params_)
 print(grid_search.best_score_)

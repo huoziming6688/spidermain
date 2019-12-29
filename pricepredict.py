@@ -4,8 +4,9 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.model_selection import GridSearchCV
 from sklearn.ensemble import RandomForestRegressor 
-from sklearn.externals import joblib
-import matplotlib.pyplot as plt
+# from sklearn.externals import joblib
+import joblib
+# import matplotlib.pyplot as plt
 HOST='localhost'
 USER='root'
 PWD=''
@@ -30,7 +31,7 @@ y_test=target
 
 # plt.rcParams["font.sans-serif"]=["SimHei"]
 # plt.rcParams["axes.unicode_minus"]=False
-grid_search=joblib.load('d:\\model.pkl')
+grid_search=joblib.load('d:\\model_1.pkl')
 # features = X_train.columns
 # importance = grid_search.best_estimator_.feature_importances_
 # fi = pd.Series(importance,index = features)
